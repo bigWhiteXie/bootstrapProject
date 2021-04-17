@@ -1,0 +1,240 @@
+/* 默认样式清除 */
+*{
+    margin: 0;
+    padding: 0;
+}
+dl, ol, ul {
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+p{
+    margin-bottom: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+body,
+html {
+    background-color: #F8F3ED;
+}
+/* div,
+ul,
+li {
+    box-sizing: content-box;
+} */
+
+/* 头部导航 */
+.logo img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.meau-box{
+    display: none;
+}
+@media screen and (min-width:1140px){
+   .header{
+       height: 100px;
+       padding: 20px 0;
+   }
+   .header .container{
+       height: 100%;
+   }
+   .header .row{
+       height: 100%;
+   }
+   .logo{
+       display: flex;
+       height: 100%;
+       align-items: center;
+   }
+   
+   .header .col-lg-9{
+       display: flex;
+       justify-content: flex-end;
+   }
+   .header-list{
+       display: flex;
+   }
+   .header-list li a{
+       display: inline-block;
+       height: 100%;
+       line-height: 60px;
+       font-size: 16px;
+       color: black;
+       padding: 0 30px;
+   }
+   .header-list a:hover{
+       background-color: black;
+       color: #ffffff;
+       text-decoration: none;
+   }
+
+}
+@media screen and (max-width:1139px){
+    .header {
+        height: 71.06px;
+        padding: 20px 0;
+    }
+    .header .logo img {
+        height: 32px;
+    }
+    .header .meau-box{
+        display: flex;
+        justify-content: flex-end;
+        
+    }
+    .meau{
+        display: flex;
+        width: 32px;
+        height: 29px;
+        border: 1px dashed black;
+        justify-content: center;
+        align-items: center;
+    }
+    .meau i{
+        font-size: 20px;
+    }
+    .col-lg-9{
+        display: none;
+    }
+    .header-list{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin-top: 71.06px;
+        padding-left: 30px;
+        padding-right: 20px;
+        background-color: #F3F3F3;
+        z-index: 999;
+    }
+    .header-list li {
+        height: 40px;
+        line-height: 40px;
+        border-bottom: 1px solid black;
+    }
+    .col-2:hover + .col-lg-9{
+        display: block;
+        position: static;
+    }
+}
+
+/* banner */
+/* .banner {
+    height: 395.56px;
+} */
+
+/* brand-list */
+.brand-list{
+    margin-top: 40px;
+}
+.brand-list .col-lg-4{
+    display: flex;
+}
+.brand-item {
+    position: relative;
+    margin: 0 15px;
+    width: 100%;
+    color: #666666;
+    background-color: white;
+}
+.brand-item img{
+    width: 100%;
+}
+.brand-item h2 {
+    font-size: 18px;
+    text-align: center;
+    line-height: 2.6;
+}
+.brand-item p {
+    margin: 14px 20px;
+    margin-bottom: 122px;
+    font-size: 14px;
+}
+.more{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -31px;
+    width: 62px;
+    height: 62px;
+    line-height: 62px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px dashed #666666;
+}
+/* 圆形图片列表  */
+.logo-list {
+    margin-top: 40px;
+    background: url("../img/bg.jpg") repeat;
+}
+.logo-item{
+    display: flex;
+    height: 262px;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-text{
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* 产品列表 */
+.product-item{
+    margin-top: 30px;
+    margin-left: 20px;
+    padding: 4px;
+    border: 1px solid #dedede;
+    box-shadow: 5px 5px 0px #dedede;
+}
+.product-item img{
+    width: 100%;
+}
+.product-item p {
+    margin: 5px 0;
+    text-align: center;
+}
+
+/* 新闻列表 */
+.news-right {
+    padding-left: 15px;
+}
+.news-right .row{
+    flex-wrap: wrap;
+    margin-bottom: 11px;
+}
+
+.news-right img {
+     width: 100%; 
+     min-height: 102.5px; 
+    margin-top: 20px;
+}
+.news-text{
+    margin-top: 20px;
+}
+.news-right .news-title{
+    font-size: 16px;
+    color: #666666;
+}
+.news-title + p {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #666666;
+}
+.news-title ~ a{
+    font-size: 14px;
+    color: #d68c37;
+}
+.news-lunbo img{
+    margin-top: 20px;
+    max-width: 100%;
+    min-height: 341.69px;
+}
+
